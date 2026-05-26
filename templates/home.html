@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forest Fire Prediction</title>
+</head>
+<body>
+
+    <h1>Forest Fire Prediction</h1>
+
+    <form action="/predict" method="POST">
+
+        <input type="text" name="Temperature" placeholder="Temperature" required><br><br>
+
+        <input type="text" name="RH" placeholder="Relative Humidity" required><br><br>
+
+        <input type="text" name="Ws" placeholder="Wind Speed" required><br><br>
+
+        <input type="text" name="Rain" placeholder="Rain" required><br><br>
+
+        <input type="text" name="FFMC" placeholder="FFMC" required><br><br>
+
+        <input type="text" name="DMC" placeholder="DMC" required><br><br>
+
+        <input type="text" name="ISI" placeholder="ISI" required><br><br>
+
+        <input type="text" name="Classes" placeholder="Classes (0 or 1)" required><br><br>
+
+        <input type="text" name="Region" placeholder="Region (0 or 1)" required><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
